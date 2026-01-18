@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
 html {
     font-family: Arial, sans-serif;
 }
@@ -48,7 +57,6 @@ header {
 .icon-navbar {
   display: flex;
   align-items: center;
-  /* margin-left: 12px; */
 }
 
 .user-icon span {
@@ -98,15 +106,16 @@ header {
   cursor: pointer;
 }
 
-header div:first-child {
-  padding-right: 11px;
+.choice {
+  margin-left: auto; 
+  display: flex;
+  align-items: center;
 }
 
-header div:first-child a {
-  padding-left: 14px;
-  color: rgba(0, 0, 0, 0.87);
+.choice a {
+  margin-right: 15px;
+  color: rgba(0,0,0,0.87);
   font-size: 13px;
-  font-weight: 400;
 }
 
 .logo {
@@ -251,15 +260,125 @@ footer {
   border-bottom: solid 1px #dadce0;
 }
 
-@media (max-width: 900px) and (min-width: 500px) {
+#all {
+  display: none;
+}
+
+#footer-phone {
+  display: none;
+}
+
+#phone {
+  display: none;
+}
+#flask-first {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .choice {
+    margin-right: auto;
+    margin-left: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  #gmail {
+    display: none;
+  }
+
+  #all {
+    display:  inline-block;
+  }
+
+  #flask-second {
+    display: none;
+  }
+
   .main-container {
-    transform: scale(0.92);
+    margin-top: 60px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .google-logo {
+    width: 160px;
+    height: auto;
+  }
+  
+  .logo {
+     margin-bottom: 24px;
+  }
+
+  .search-container {
+    height: 46px;
+  }
+
+  .fa-plus {
+    display: none;
+  }
+
+  #ai-button {
+    display: none;
+  }
+
+  .button-container {
+    display: none;
+  }
+
+  #footer-pc {
+    display: none;
+  }
+
+  #phone {
+    display: inline-block;
+  }
+
+  #flask-first {
+    display: inline-block;
+  }
+
+  .footer-country {
+    padding: 7px 10px;
+    font-size: 13px;
+  }
+
+  #footer-phone {
+    display: block;
+    margin: 5px auto;
+    font-size: 13px;
+  }
+
+  .footer-container {
+    padding: 7px 10px;
   }
 }
 
-@media (max-width: 500px) {
+@media (min-width: 601px) and (max-width: 840px) {
   .main-container {
-    transform: scale(1);
+    margin-top: 70px;
+    padding-left: 24px;
+    padding-right: 24px;
+    max-width: 100%;
+  }
+
+  .google-logo {
+    width: 220px;
+    height: auto;
+  }
+  
+  .logo {
+     margin-bottom: 26px;
+  }
+
+  .footer-container {
+    padding: 15px 20px; 
+    justify-content: space-evenly;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
   }
 }
-

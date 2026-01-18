@@ -1,10 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Google</title>
-    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -12,32 +15,54 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=apps" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=notifications"
+    />
   </head>
   <body>
     <header>
-      <div>
-        <a href="">Gmail</a>
-        <a href="">Images</a>
+      <div class="choice">
+        <i class="fa-solid fa-flask" id="flask-first"></i>
+        <a href="" id="all">All</a>
+        <a href="" id="gmail">Gmail</a>
+        <a href="" id="images">Images</a>
       </div>
       <div class="icon-navbar">
-        <i class="fa-solid fa-flask"></i>
-        <img width="24" height="24" src="https://img.icons8.com/ios-glyphs/30/keypad.png" alt="keypad" id="keypad"/>
+        
+        <span class="material-symbols-outlined" id="phone"> notifications </span>
+        <i class="fa-solid fa-flask" id="flask-second"></i>
+        <img
+          width="24"
+          height="24"
+          src="https://img.icons8.com/ios-glyphs/30/keypad.png"
+          alt="keypad"
+          id="keypad"
+        />
       </div>
       <a href="" class="user-icon"><span>B</span></a>
     </header>
     <main>
       <div class="main-container">
         <h1 class="logo">
-          <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo" class="google-logo">
+          <img
+            src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+            alt="Google Logo"
+            class="google-logo"
+          />
         </h1>
         <div class="search-container">
           <i class="fa-solid fa-plus"></i>
-          <input type="text" name="search-input" id="search-input">
-          <!-- <i class="fa-solid fa-keyboard"></i> -->
+          <i class="fa-solid fa-magnifying-glass" id="phone"></i>
+          <input type="text" name="search-input" id="search-input" />
+          <i class="fa-solid fa-magnifying-glass" id="phone"></i>
           <i class="fa-solid fa-microphone"></i>
           <i class="fa-regular fa-camera"></i>
-          <button id="ai-button" ><i class="fa-solid fa-magnifying-glass"></i> AI Mode</button>
+          <button id="ai-button">
+            <i class="fa-solid fa-magnifying-glass"></i> AI Mode
+          </button>
         </div>
         <div class="button-container">
           <button class="main-button">Google Search</button>
@@ -51,13 +76,24 @@
     <footer>
       <div class="footer-country">Thailand</div>
       <div class="footer-container">
-        <div class="footer-links">
+      <div class="footer-links" id="footer-phone">
+          <a href="">Dark theme: off</a>
+          <a href="">Settings</a>
+          <a href="">Privacy</a>
+          <a href="">Terms</a>
+        </div>
+        <div class="footer-links" id="footer-phone">
+          <a href="">Advertising</a>
+          <a href="">Business</a>
+          <a href="">About</a>
+        </div>
+        <div class="footer-links" id="footer-pc">
           <a href="">About</a>
           <a href="">Advertising</a>
           <a href="">Business</a>
           <a href="">How Search works</a>
         </div>
-        <div class="footer-links">
+        <div class="footer-links" id="footer-pc">
           <a href="">Privacy</a>
           <a href="">Terms</a>
           <a href="">Settings</a>
