@@ -1,19 +1,20 @@
 * {
   margin: 10px;
-  /* background-color: black; */
   box-sizing: border-box;
 }
 
 
 body {
   background-color: black;
-  margin: 10px;
 }
 
 #home {
     margin: -1px -1px 0 -1px;
-    padding-bottom: 2cm;
+    padding-bottom: 1cm;
     background-color: #5f6caf;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 header {
@@ -120,7 +121,7 @@ fieldset button:hover {
   height: 400px;
 
   display: flex;
-  margin: 25px 0px 25px 50px;
+  margin: 25px auto;
 }
 
 
