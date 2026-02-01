@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;700&display=swap"
+  rel="stylesheet"
+/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container d-flex gap-4">
+      <div
+        class="left-container col-lg-3 gap-4 d-flex flex-column"
+        id="left-container"
+      >
+        <div class="card">
+          <p id="current-day"></p>
+          <p id="current-dayNum"></p>
+          <div class="d-flex gap-2">
+            <p id="current-month"></p>
+            <p>•</p>
+            <p id="current-time"></p>
+          </div>
+        </div>
+        <div class="card-medium">
+          <div class="row g-3">
+            <div class="col-6">
+              <div
+                class="card-count d-flex flex-column align-items-center justify-content-center"
+              >
+                <p id="all-task" class="stat-number text-primary mb-0">0</p>
+                <p class="text-muted small mb-0 fw-medium">All tasks</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div
+                class="card-count d-flex flex-column align-items-center justify-content-center"
+              >
+                <p id="active-task" class="stat-number text-success mb-0">
+                  0
+                </p>
+                <p class="text-muted small mb-0 fw-medium">Active</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <p>Create New Task</p>
+          <form>
+            <input
+              type="text"
+              id="task-name"
+              class="form-control mb-2"
+              placeholder="Enter task name"
+            />
+            <select class="form-select mb-2" id="priority-input">
+              <option value="Medium">Medium priority</option>
+              <option value="High">High priority</option>
+              <option value="Low">Low priority</option>
+            </select>
+            <button class="btn btn-primary w-100" type="submit" id="add-task-btn">Add Task</button>
+          </form>
+        </div>
+      </div>
+      <div class="right-container col-lg-8 d-flex flex-column">
+        <div class="card" style="padding: 0;">
+          <div class="p-4">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <p class="fs-3 fw-medium">My tasks</p>
+              <button class="btn btn-danger" id="clear-btn">Clear completed tasks</button>
+            </div>
+            <div class="d-flex align-items-center" style="width: 100%">
+              <div class="d-flex align-items-center gap-2 flex-grow-1 me-3">
+                <i class="fa-solid fa-magnifying-glass text-secondary-emphasis"></i>
+                <input type="text" id="search-input" placeholder="Search task" class="form-control"/>
+              </div>
+              <div class="btn-container-list">
+                <button class="btn-list active" id="all-btn">All</button>
+                <button class="btn-list" id="active-btn">Active</button>
+                <button class="btn-list" id="completed-btn">Completed</button>
+              </div>
+            </div>
+          </div>
+          <div class="list-area py-4">
+            <div class="list-area-inner"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
