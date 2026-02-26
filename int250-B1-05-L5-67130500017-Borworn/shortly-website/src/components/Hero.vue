@@ -5,19 +5,19 @@
   <section class="w-full mb-40">
     <!-- Main Container -->
     <div
-      class="max-w-6xl mx-auto flex flex-col-reverse gap-40 items-center lg:flex-row"
+      class="max-w-6xl mx-auto flex flex-col-reverse lg:justify-between gap-40 md:gap-20 items-center lg:flex-row"
     >
       <!-- Text block -->
 
       <!-- Text Content -->
-      <div class="text-center lg:text-left max-w-110">
+      <div class="text-center lg:text-left lg:max-w-110 max-w-xl">
         <!-- Heading -->
         <h1 class="text-4xl lg:text-6xl font-bold my-5">
           Turn every link into a brand touchpoint
         </h1>
 
         <!-- Description -->
-        <p>
+        <p class="text-gray-500">
           Boost trust with branded links-and see exactly how every link
           performs.
         </p>
@@ -37,7 +37,7 @@
         <img
           src="../assets/undraw_link-shortener_9ro5.svg"
           alt=""
-          class="max-w-110"
+          class="max-w-110 lg:mr-[100px]"
         />
       </div>
     </div>

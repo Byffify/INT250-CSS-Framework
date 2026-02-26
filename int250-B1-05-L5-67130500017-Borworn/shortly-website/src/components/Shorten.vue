@@ -58,18 +58,15 @@ function copyText(text) {
         <!-- Card Item -->
         <div
           v-for="item in links"
-          class="bg-white p-4 rounded flex flex-col md:flex-row md:justify-between md:items-center gap-4"
+          class="bg-white p-4 rounded flex flex-col items-center sm:flex-row sm:justify-between gap-1 sm:gap-4"
         >
           <!-- Original Link -->
-          <div>
+          <div class="font-bold">
             {{ item.original }}
           </div>
 
-          <!-- Divider for Mobile -->
-          <hr class="md:hidden" />
-
           <!-- Short Link Section -->
-          <div class="flex items-center gap-5">
+          <div class="flex flex-col items-center gap-2 sm:gap-5 sm:flex-row">
             <!-- Short Link Text -->
             <div class="text-cyan-500 font-bold">
               {{ item.short }}
@@ -78,7 +75,7 @@ function copyText(text) {
             <!-- Copy Button -->
             <button
               @click="copyText(item.short)"
-              class="bg-cyan-500 text-white px-4 py-2 rounded"
+              class="bg-cyan-500 text-white px-6 py-1 rounded-lg"
             >
               Copy
             </button>

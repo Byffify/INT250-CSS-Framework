@@ -12,12 +12,11 @@ function toggleMenu() {
   <!-- Nav Container -->
   <nav class="w-full">
     <!-- Flex Container for all item-->
-    <div class="max-w-6xl mx-auto p-6 flex justify-between items-center">
+    <div class="max-w-6xl mx-auto py-6 px-6 lg:px-0 flex justify-between items-center">
       <!-- Flex container for Logo/Menu -->
       <div class="flex items-center gap-10">
         <img src="../assets/logo.svg" alt="" />
-
-        <div class="hidden lg:flex gap-6">
+        <div class="hidden lg:flex gap-6 font-bold">
           <a href="#">Feature</a>
           <a href="#">Pricing</a>
           <a href="#">Resources</a>
@@ -26,7 +25,7 @@ function toggleMenu() {
 
       <!-- Right Menu -->
       <div class="hidden lg:flex gap-4 items-center">
-        <a href="#">Login</a>
+        <a href="#" class="font-bold">Login</a>
 
         <a href="#" class="bg-cyan-500 px-6 py-2 rounded-full text-white">
           Sign Up

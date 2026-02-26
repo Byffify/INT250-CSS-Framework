@@ -4,7 +4,7 @@
   <!-- Footer Section -->
   <section class="w-full bg-black">
     <!-- Footer Container -->
-    <div class="flex justify-between max-w-7xl mx-auto py-20">
+    <div class="flex justify-between max-w-7xl mx-auto md:px-8 py-20">
       <!-- Logo -->
       <div>
         <img src="../assets/logo.svg" alt="" />

@@ -4,7 +4,7 @@
   <!-- CTA Section -->
   <section class="cta w-full bg-indigo-950">
     <!-- CTA Container -->
-    <div class="max-w-6xl mx-auto text-center py-16 px-6">
+    <div class="max-w-6xl mx-auto text-center py-25 px-6">
       <!-- CTA Heading -->
       <h1 class="text-white font-bold text-3xl lg:text-4xl">
         Boost your links today
