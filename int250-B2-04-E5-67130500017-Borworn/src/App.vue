@@ -50,7 +50,7 @@ const errors = computed(() => {
   if (!form.studentId.trim()) {
     e.studentId = "Student ID is required.";
   } else if (!/^\d{11}$/.test(form.studentId)) {
-    e.studentId = "Student ID must be 10 digits."; // คงไว้ตามโค้ดเริ่มต้นของคุณ
+    e.studentId = "Student ID must be 10 digits.";
   }
 
   if (!form.email.trim()) {
@@ -80,7 +80,7 @@ function handleSubmit() {
 
   if (!isFormValid.value) return;
 
-  alert("Registration submitted successfully!"); // คงไว้ตามโค้ดเริ่มต้นของคุณ
+  alert("Registration submitted successfully!");
 
   form.fullName = "";
   form.studentId = "";
@@ -94,9 +94,6 @@ function handleSubmit() {
   submitted.value = false;
 }
 
-// ----------------------------------------------------
-// ส่วนที่เขียน "เพิ่มเติม" ลงไปโดยไม่แก้ของเดิม
-// ----------------------------------------------------
 const yearDescriptions = {
   "1": "Beginner student level",
   "2": "Intermediate foundation",
