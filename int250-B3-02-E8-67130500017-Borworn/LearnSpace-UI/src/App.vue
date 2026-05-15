@@ -58,16 +58,17 @@ const courses = [
 
 <template>
   <AppNavbar />
-  <div class="bg-slate-900/5 dark:bg-slate-900/50 min-h-screen py-8">
+  <div class="bg-slate-900/5 dark:bg-slate-900/50 min-h-screen py-4 md:py-8 px-4 md:px-0">
+    <!-- Hero section -->
     <section>
       <div
-        class="bg-indigo-600/90 max-w-7xl mx-auto px-6 py-8 shadow-md rounded-2xl flex flex-col gap-4"
+        class="bg-indigo-600/90 max-w-7xl mx-auto px-4 md:px-6 py-6 md:py-8 shadow-md rounded-2xl flex flex-col gap-4"
       >
-        <p class="text-white">Welcome back, Student!</p>
-        <h1 class="font-bold text-3xl text-white">
+        <p class="text-white text-sm md:text-base">Welcome back, Student!</p>
+        <h1 class="font-bold text-2xl md:text-3xl text-white">
           Continue your learning journey today.
         </h1>
-        <p class="text-white">
+        <p class="text-white text-sm md:text-base">
           Track your courses, review assignments, and monitor your learning
           progress in one place.
         </p>
@@ -79,8 +80,10 @@ const courses = [
         </button>
       </div>
     </section>
+
+    <!-- Stats section -->
     <section>
-      <div class="grid grid-cols-4 gap-4 max-w-7xl mx-auto mt-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4 max-w-7xl mx-auto mt-6 md:mt-8">
         <StarCard
           v-for="item in stats"
           :key="item.id"
@@ -89,13 +92,15 @@ const courses = [
         />
       </div>
     </section>
+
+    <!-- Courses section -->
     <section>
-      <div class="max-w-7xl mx-auto mt-8">
-        <h1 class="font-bold text-2xl">My Courses</h1>
-        <p class="text-slate-400 text-sm">
+      <div class="max-w-7xl mx-auto mt-6 md:mt-8">
+        <h1 class="font-bold text-xl md:text-2xl">My Courses</h1>
+        <p class="text-slate-400 text-xs md:text-sm">
           Review your course progress and assignments status.
         </p>
-        <div class="grid grid-cols-1 md:grid-cols-2 md:gap-4 mt-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4 mt-4">
           <CourseCard
             v-for="course in courses"
             :key="course.courseCode"

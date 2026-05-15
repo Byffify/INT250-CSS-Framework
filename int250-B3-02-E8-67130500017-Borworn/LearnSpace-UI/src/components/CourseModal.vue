@@ -24,20 +24,20 @@ defineEmits(["close", "enroll"]);
   <!-- Modal overlay -->
   <div
     v-if="isOpen && courseData"
-    class="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur"
+    class="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur p-4"
     @click="$emit('close')"
   >
     <!-- Modal container -->
     <div
-      class="w-full max-w-2xl rounded-2xl bg-white p-8 shadow-xl dark:bg-slate-900"
+      class="w-full max-w-2xl rounded-2xl bg-white p-4 md:p-8 shadow-xl dark:bg-slate-900 max-h-[90vh] overflow-y-auto"
       @click.stop
     >
       <!-- Header -->
-      <div class="flex items-center justify-between">
-        <h2 class="text-2xl font-bold">{{ courseData.title }}</h2>
+      <div class="flex items-center justify-between gap-4">
+        <h2 class="text-xl md:text-2xl font-bold">{{ courseData.title }}</h2>
         <button
           @click="$emit('close')"
-          class="text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+          class="text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200 flex-shrink-0"
         >
           ✕
         </button>
@@ -55,20 +55,20 @@ defineEmits(["close", "enroll"]);
             {{ courseData.description }}
           </p>
         </div>
-        <div class="grid grid-cols-2 gap-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
             <p class="text-sm text-slate-500 dark:text-slate-400">Students</p>
-            <p class="text-xl font-bold">{{ courseData.students }}</p>
+            <p class="text-lg md:text-xl font-bold">{{ courseData.students }}</p>
           </div>
           <div>
             <p class="text-sm text-slate-500 dark:text-slate-400">Rating</p>
-            <p class="text-xl font-bold">{{ courseData.rating }}/5</p>
+            <p class="text-lg md:text-xl font-bold">{{ courseData.rating }}/5</p>
           </div>
         </div>
       </div>
 
       <!-- Actions -->
-      <div class="mt-8 flex gap-3">
+      <div class="mt-8 flex flex-col md:flex-row gap-3">
         <button
           @click="$emit('enroll')"
           class="flex-1 rounded-xl bg-indigo-600 px-4 py-3 font-semibold text-white hover:bg-indigo-800"
